@@ -27,8 +27,8 @@ func main() {
 	logger.Println("hello^^")
 	logger.Println("server begin...")
 
-	http.HandleFunc("./", hello)
-	http.HandleFunc("./static/", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", hello)
+	http.HandleFunc("/static/", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, r.URL.Path[1:])
 	})
 	err1 := http.ListenAndServe(":80", nil)
