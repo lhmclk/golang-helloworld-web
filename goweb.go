@@ -11,7 +11,7 @@ import (
 
 func hello(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
-		io.WriteString(w, "<html><head></head><body><h1>Welcome to GaiaStack!</h1><img height=\"100\" src=\"./static/logo.png\"></body></html>")
+		io.WriteString(w, "<html><head></head><body><h1>Welcome to GaiaStack@_@!</h1><img height=\"100\" src=\"./static/logo.png\"></body></html>")
 		return
 	}
 }
